@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Negeri 3 Keramas - Mewujudkan Generasi Unggul & Berkarakter</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',
+                            blue: '#1e3a8a',
+                            lightBlue: '#3b82f6',
+                            emerald: '#059669',
+                            gold: '#f59e0b',
+                            amber: '#d97706',
+                            cream: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-gold selection:text-slate-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-brand-gold"></i> <b class="font-normal" data-k="telepon">082322669074</b></span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-brand-gold"></i> <b class="font-normal" data-k="email">Sdtigakeramas@yahoo.co.id</b></span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-brand-gold"></i> <b class="font-normal" data-k="jam">Senin - Jumat: 07.00 - 15.30 WIB</b></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-brand-emerald text-white text-xs px-2 py-0.5 rounded-full font-medium" data-k="ppdb_badge">PPDB 2026/2027 DIBUKA</span>
+                <div class="flex items-center gap-2.5 text-slate-300 ml-2">
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-emerald flex items-center justify-center text-white font-heading font-extrabold text-2xl shadow-md group-hover:scale-105 transition transform">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="block font-heading font-extrabold text-xl text-brand-navy leading-none tracking-tight">SDN 3 Keramas</span>
+                        <span class="text-xs font-medium text-slate-500 tracking-wider">UNGGUL • BERKARAKTER • GLOBAL</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-700">
+                    <a href="#beranda" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Beranda</a>
+                    <a href="#profil" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Profil</a>
+                    <a href="#jurusan" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Program & Jurusan</a>
+                    <a href="#berita" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Berita & Pengumuman</a>
+                    <a href="#galeri" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Galeri</a>
+                    <a href="#ppdb" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">PPDB</a>
+                    <a href="#kontak" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Kontak</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="app.html" class="text-slate-500 hover:text-brand-blue text-sm font-medium" title="Login Admin / Guru"><i class="fa-solid fa-lock"></i> Login</a>
+                    <button onclick="openPpdbModal()" class="bg-gradient-to-r from-brand-amber to-brand-gold hover:from-amber-600 hover:to-amber-500 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Daftar PPDB
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Beranda</a>
+            <a href="#profil" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Profil</a>
+            <a href="#jurusan" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Program & Jurusan</a>
+            <a href="#berita" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Berita & Pengumuman</a>
+            <a href="#galeri" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Galeri</a>
+            <a href="#ppdb" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">PPDB Info</a>
+            <a href="#kontak" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Kontak</a>
+            <div class="pt-2">
+                <button onclick="openPpdbModal()" class="w-full bg-brand-gold text-white font-semibold px-4 py-2.5 rounded-xl shadow text-center">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Daftar PPDB Online
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="beranda" class="relative bg-brand-navy text-white overflow-hidden min-h-[600px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop" alt="Gedung Sekolah" data-img="hero" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 gradient-overlay hero-pattern"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full text-brand-gold text-xs sm:text-sm font-semibold mb-6 border border-white/15">
+                    <i class="fa-solid fa-award"></i> <span data-k="akreditasi_ket">Terakreditasi B oleh BAN-S/M</span> &middot; TA <span data-k="tahun_ajaran">2026/2027</span>
+                </div>
+                <h1 data-k="hero_judul" class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                    Mewujudkan Generasi Cerdas, Berkarakter & Berdaya Saing Global
+                </h1>
+                <p data-k="hero_teks" class="text-base sm:text-lg text-slate-200 mb-8 leading-relaxed font-light">
+                    SD Negeri 3 Keramas berkomitmen memberikan pendidikan berkulitas tinggi, memadukan ilmu pengetahuan, teknologi, dan nilai moral serta kebangsaan.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="openPpdbModal()" class="bg-gradient-to-r from-brand-amber to-brand-gold hover:from-amber-600 hover:to-amber-500 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        Pendaftaran PPDB 2026 <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <a href="#profil" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur-md transition">
+                        Jelajahi Profil <i class="fa-solid fa-compass ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Counter -->
+    <section class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12">
+        <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 border border-slate-100">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_siswa">1,240+</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Siswa Aktif</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_guru">75+</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Guru & Tenaga Kependidikan</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-amber-50 text-brand-amber flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_rombel">150+</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Rombongan Belajar</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_akreditasi">92%</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Akreditasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal Welcome & Profile Section -->
+    <section id="profil" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Principal Photo & Speech -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-brand-blue to-brand-emerald rounded-3xl opacity-30 blur-lg"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Kepala Sekolah" data-img="kepala_foto" class="w-full h-96 object-cover rounded-2xl">
+                            <div class="p-4 text-center">
+                                <h3 class="font-heading font-bold text-xl text-slate-900" data-k="kepala">Kadek Marisa Rosalia, S.Pd.SD.</h3>
+                                <p class="text-brand-emerald font-medium text-sm">Kepala Sekolah SD Negeri 3 Keramas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speech Content & Vision Mission -->
+                <div class="lg:col-span-7">
+                    <div class="inline-block bg-blue-100 text-brand-blue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                        Sambutan Kepala Sekolah
+                    </div>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        Selamat Datang di Portal Resmi SD Negeri 3 Keramas
+                    </h2>
+                    <p data-k="sambutan" class="text-slate-600 leading-relaxed mb-6">
+                        "Pendidikan bukan sekadar transfer ilmu, melainkan proses membentuk karakter, mengasah kreativitas, dan membangun fondasi kesuksesan masa depan anak bangsa. Di SDN 3 Keramas, kami berkomitmen menyediakan lingkungan belajar modern yang inklusif dan transformatif."
+                    </p>
+
+                    <!-- Vision & Mission Accordion/Tabs -->
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-brand-emerald flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <h4 class="font-heading font-bold text-lg text-slate-900">Visi Sekolah</h4>
+                            </div>
+                            <p data-k="visi" class="text-slate-600 text-sm leading-relaxed pl-11">
+                                Menjadi lembaga pendidikan unggul terdepan yang menghasilkan lulusan beriman, bertakwa, berprestasi akademis & non-akademis tinggi, serta berwawasan lingkungan global pada tahun 2030.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <h4 class="font-heading font-bold text-lg text-slate-900">Misi Utama</h4>
+                            </div>
+                            <ul data-list="misi" class="text-slate-600 text-sm space-y-2 pl-11 list-disc">
+                                <li>Menyelenggarakan pembelajaran berbasis STEAM dan Kurikulum Merdeka yang inovatif.</li>
+                                <li>Mengembangkan potensi minat bakat siswa melalui program ekstrakurikuler komprehensif.</li>
+                                <li>Membangun karakter religius, berintegritas, dan bertoleransi tinggi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Majors Section -->
+    <section id="jurusan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-emerald-100 text-brand-emerald text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                    Pilihan Akademik
+                </div>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Program Unggulan
+                </h2>
+                <p class="text-slate-600">
+                    Kurikulum adaptif dirancang untuk mendukung persiapan studi lanjut ke SMP Negeri unggulan.
+                </p>
+            </div>
+
+            <div id="programGrid" class="grid md:grid-cols-3 gap-8">
+                <!-- Program LitNum -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Literasi & Numerasi</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                       Gerakan membaca, pojok baca kelas, dan pembelajaran berhitung yang kontekstual.
+                    </p>
+                    <div class="space-y-2 text-xs font-semibold text-slate-700">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Lab IPA Terintegrasi</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Robotik & Coding Club</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Olympiad Training Center</div>
+                    </div>
+                </div>
+
+                <!-- Program Ekstrakurikuler -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-emerald text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Ekstrakurikuler</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Tari, Bulu Tangkis, Catur dan Menggambar/Mewarnai sebagai bagian dari kegiatan ekstrakurikuler.
+                    </p>
+                    <div class="space-y-2 text-xs font-semibold text-slate-700">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Lab Pasar Modal & Ekonomi</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Program Debat & Model UN</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Kewirausahaan Siswa</div>
+                    </div>
+                </div>
+
+                <!-- Program Karakter & Pramuka -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Karakter & Pramuka</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Penguatan Profil Pelajar Pancasila, Pramuka, dan sekolah ramah lingkungan.
+                    </p>
+                    <div class="space-y-2 text-xs font-semibold text-slate-700">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Laboratorium Bahasa Multimedia</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> English & Foreign Club</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Pertukaran Pelajar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements Section -->
+    <section id="berita" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-10">
+                <!-- Latest News Column -->
+                <div class="lg:col-span-8">
+                    <div class="flex justify-between items-end mb-8">
+                        <div>
+                            <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Informasi Terkini</span>
+                            <h2 class="font-heading text-3xl font-extrabold text-slate-900">Berita & Kegiatan</h2>
+                        </div>
+                        <a href="#" class="text-brand-blue font-semibold text-sm hover:underline flex items-center gap-1">Lihat Semua <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+
+                    <div id="newsGrid" class="grid sm:grid-cols-2 gap-6">
+                        <!-- News Card 1 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200/80 flex flex-col">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Berita 1" class="h-48 w-full object-cover">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 18 Sep 2026</span>
+                                    <span>•</span>
+                                    <span class="text-brand-blue font-semibold">Prestasi</span>
+                                </div>
+                                <h3 class="font-heading font-bold text-lg text-slate-900 mb-2 hover:text-brand-blue cursor-pointer">Tim Robotik SDN 3 Keramas Raih Medali Emas Olimpiade Nasional</h3>
+                                <p class="text-slate-600 text-sm line-clamp-2 mb-4 flex-1">Tim robotik berhasil mengalahkan puluhan sekolah unggulan dari seluruh Indonesia dalam ajang Robotik Youth Innovation 2026.</p>
+                                <button onclick="alert('Membuka detail berita prestasi robotik.')" class="text-brand-blue font-semibold text-sm hover:underline text-left">Baca Selengkapnya →</button>
+                            </div>
+                        </div>
+
+                        <!-- News Card 2 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200/80 flex flex-col">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop" alt="Berita 2" class="h-48 w-full object-cover">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 12 Sep 2026</span>
+                                    <span>•</span>
+                                    <span class="text-brand-emerald font-semibold">Kegiatan</span>
+                                </div>
+                                <h3 class="font-heading font-bold text-lg text-slate-900 mb-2 hover:text-brand-blue cursor-pointer">Pelaksanaan Pentas Seni & Bazar Kewirausahaan Siswa 2026</h3>
+                                <p class="text-slate-600 text-sm line-clamp-2 mb-4 flex-1">Ajang pameran bakat seni dan jiwa kewirausahaan siswa-siswi yang berlangsung meriah di Lapangan Utama Sekolah.</p>
+                                <button onclick="alert('Membuka detail berita Pentas Seni.')" class="text-brand-blue font-semibold text-sm hover:underline text-left">Baca Selengkapnya →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement Sidebar Board -->
+                <div class="lg:col-span-4">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-amber flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-slate-900">Papan Pengumuman</h3>
+                                <p class="text-xs text-slate-500">Informasi penting resmi sekolah</p>
+                            </div>
+                        </div>
+
+                        <div id="annList" class="space-y-4">
+                            <!-- Announcement Item 1 -->
+                            <div class="p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100">
+                                <span class="bg-red-100 text-red-600 text-[10px] font-bold px-2 py-0.5 rounded">PENTING</span>
+                                <span class="text-xs text-slate-400 ml-2">20 Sep 2026</span>
+                                <h4 class="font-semibold text-sm text-slate-800 mt-1 cursor-pointer hover:text-brand-blue" onclick="openAnnouncementModal('Jadwal Orientasi PPDB 2026/2027')">Jadwal Verifikasi Berkas Fisik Calon Siswa PPDB</h4>
+                                <a href="#" onclick="alert('Mengunduh Berkas PDF...'); return false;" class="inline-flex items-center gap-1 text-xs text-brand-blue font-medium mt-2 hover:underline">
+                                    <i class="fa-solid fa-file-pdf"></i> Unduh Jadwal (PDF)
+                                </a>
+                            </div>
+
+                            <!-- Announcement Item 2 -->
+                            <div class="p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100">
+                                <span class="bg-blue-100 text-brand-blue text-[10px] font-bold px-2 py-0.5 rounded">AKADEMIK</span>
+                                <span class="text-xs text-slate-400 ml-2">15 Sep 2026</span>
+                                <h4 class="font-semibold text-sm text-slate-800 mt-1 cursor-pointer hover:text-brand-blue" onclick="openAnnouncementModal('Pelaksanaan PTS Semester Ganjil')">Pelaksanaan Penilaian Tengah Semester Ganjil</h4>
+                                <a href="#" onclick="alert('Mengunduh Jadwal Ujian...'); return false;" class="inline-flex items-center gap-1 text-xs text-brand-blue font-medium mt-2 hover:underline">
+                                    <i class="fa-solid fa-download"></i> Unduh Jadwal Ujian
+                                </a>
+                            </div>
+
+                            <!-- Announcement Item 3 -->
+                            <div class="p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100">
+                                <span class="bg-emerald-100 text-brand-emerald text-[10px] font-bold px-2 py-0.5 rounded">BEASISWA</span>
+                                <span class="text-xs text-slate-400 ml-2">10 Sep 2026</span>
+                                <h4 class="font-semibold text-sm text-slate-800 mt-1 cursor-pointer hover:text-brand-blue" onclick="openAnnouncementModal('Pendaftaran Beasiswa Prestasi')">Pendaftaran Program Beasiswa Prestasi Gen-Z</h4>
+                                <a href="#" onclick="openPpdbModal(); return false;" class="inline-flex items-center gap-1 text-xs text-brand-blue font-medium mt-2 hover:underline">
+                                    <i class="fa-solid fa-arrow-right font-bold"></i> Daftar Online
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Facilities Section -->
+    <section id="galeri" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-block bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                    Fasilitas & Lingkungan
+                </div>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Galeri & Sarana Prasarana
+                </h2>
+                <p class="text-slate-600">
+                    Mendukung kegiatan belajar mengajar yang nyaman, interaktif, dan berteknologi modern.
+                </p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex justify-center flex-wrap gap-2 mb-10">
+                <button onclick="filterGallery('all')" class="gallery-btn bg-brand-blue text-white px-5 py-2 rounded-full text-sm font-medium shadow-sm transition">Semua</button>
+                <button onclick="filterGallery('fasilitas')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Fasilitas</button>
+                <button onclick="filterGallery('kegiatan')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Kegiatan Siswa</button>
+                <button onclick="filterGallery('prestasi')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Prestasi</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+                <div class="gallery-item fasilitas group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Perpustakaan Modern', 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop" alt="Perpustakaan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Fasilitas</span>
+                        <h4 class="font-heading font-bold text-lg">Perpustakaan Digital & Cozy Study Area</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item fasilitas group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Laboratorium Komputer', 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800&auto=format&fit=crop" alt="Lab Komputer" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Fasilitas</span>
+                        <h4 class="font-heading font-bold text-lg">Lab Komputer & Coding Lab</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item kegiatan group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Pramuka & Camp', 'https://images.unsplash.com/photo-1526976668912-1a811878dd37?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?q=80&w=800&auto=format&fit=crop" alt="Pramuka" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Kegiatan</span>
+                        <h4 class="font-heading font-bold text-lg">Kegiatan Ekstrakurikuler Pramuka</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item prestasi group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Penghargaan Medali', 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=800&auto=format&fit=crop" alt="Medali" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Prestasi</span>
+                        <h4 class="font-heading font-bold text-lg">Juara Umum Lomba Sains Nasional</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item fasilitas group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Lapangan Olahraga Multiguna', 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Lapangan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Fasilitas</span>
+                        <h4 class="font-heading font-bold text-lg">Lapangan Basket & Futsal Standar</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item kegiatan group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer" onclick="openLightbox('Seni Musik & Band', 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop" alt="Musik" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white">
+                        <span class="text-xs text-brand-gold uppercase font-bold">Kegiatan</span>
+                        <h4 class="font-heading font-bold text-lg">Studio Musik & Ekstrakurikuler Band</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PPDB Section Banner -->
+    <section id="ppdb" class="py-20 bg-gradient-to-br from-brand-navy via-slate-900 to-brand-blue text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="bg-brand-gold text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Penerimaan Peserta Didik Baru</span>
+                    <h2 class="font-heading text-3xl sm:text-5xl font-extrabold mt-4 mb-6 leading-tight">
+                        Bergabunglah Bersama Keluarga Besar SDN 3 Keramas
+                    </h2>
+                    <p data-k="ppdb_info" class="text-slate-300 mb-8 leading-relaxed">
+                        Pendaftaran PPDB Tahun Ajaran 2026/2027 telah dibuka secara resmi. Pilih jalur pendaftaran yang sesuai dan lengkapi berkas secara daring.
+                    </p>
+
+                    <!-- Steps Timeline -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-white">Pendaftaran Online</h4>
+                                <p class="text-xs text-slate-400">Isi formulir pendaftaran daring dan unggah dokumen persyaratan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-white">Verifikasi Dokumen & Tes Sekaligus</h4>
+                                <p class="text-xs text-slate-400">Pemeriksaan keabsahan dokumen serta seleksi akademis/potensi.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-white">Pengumuman & Daftar Ulang</h4>
+                                <p class="text-xs text-slate-400">Hasil seleksi resmi dan proses daftar ulang calon siswa baru.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="openPpdbModal()" class="bg-brand-gold hover:bg-amber-500 text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-edit"></i> Isi Formulir PPDB Sekarang
+                    </button>
+                </div>
+
+                <!-- Schedule Card -->
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                    <h3 class="font-heading font-bold text-2xl text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-calendar-days text-brand-gold"></i> Jadwal Penting PPDB
+                    </h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between pb-3 border-b border-white/10">
+                            <span class="text-slate-300">Pendaftaran Jalur Prestasi:</span>
+                            <span class="font-bold text-brand-gold">01 - 15 Mei 2026</span>
+                        </div>
+                        <div class="flex justify-between pb-3 border-b border-white/10">
+                            <span class="text-slate-300">Pendaftaran Jalur Zonasi & Afirmasi:</span>
+                            <span class="font-bold text-brand-gold">01 - 20 Juni 2026</span>
+                        </div>
+                        <div class="flex justify-between pb-3 border-b border-white/10">
+                            <span class="text-slate-300">Tes Potensi Akademik:</span>
+                            <span class="font-bold text-white">25 Juni 2026</span>
+                        </div>
+                        <div class="flex justify-between pb-3 border-b border-white/10">
+                            <span class="text-slate-300">Pengumuman Kelulusan:</span>
+                            <span class="font-bold text-emerald-400">30 Juni 2026</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-300">Daftar Ulang:</span>
+                            <span class="font-bold text-white">01 - 05 Juli 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="kontak" class="py-20 bg-slate-900 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 mb-16">
+                
+                <!-- School Info Column -->
+                <div class="lg:col-span-4">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="font-heading font-extrabold text-xl text-white">SDN 3 Keramas</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Mewujudkan lembaga pendidikan terdepan yang menghasilkan sumber daya manusia unggul, berakhlak mulia, dan siap bersaing secara global.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#profil" class="hover:text-brand-gold transition">Profil Sekolah</a></li>
+                        <li><a href="#jurusan" class="hover:text-brand-gold transition">Program Jurusan</a></li>
+                        <li><a href="#berita" class="hover:text-brand-gold transition">Berita & Artikel</a></li>
+                        <li><a href="#galeri" class="hover:text-brand-gold transition">Galeri Fasilitas</a></li>
+                        <li><a href="#ppdb" class="hover:text-brand-gold transition">Info PPDB</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold mt-1"></i>
+                            <span data-k="alamat">Br.Lebah, Desa Keramas, Kecamatan Blahbatuh, Kabupaten Gianyar, 80581</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <span data-k="telepon">082322669074</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-gold"></i>
+                            <span data-k="email">sdtigakeramas@yahoo.co.id</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Map / Office Hours -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Lokasi Sekolah</h4>
+                    <div class="rounded-xl overflow-hidden h-40 bg-slate-800 relative">
+                        <!-- Mock Map Graphic -->
+                        <iframe data-maps src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.576386552303!2d115.33041252253953!3d-8.574623138658902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1793360793068!5m2!1sen!2sid" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; 2026 SD Negeri 3 Keramas. Hak Cipta Dilindungi Undang-Undang. &middot; <a href="app.html" class="hover:text-brand-gold">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Registration PPDB -->
+    <div id="ppdbModal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closePpdbModal()" class="absolute top-5 right-5 w-9 h-9 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-200 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-amber-100 text-brand-amber rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-3">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h3 class="font-heading font-extrabold text-2xl text-slate-900">Formulir Pendaftaran PPDB</h3>
+                <p class="text-xs text-slate-500">Silakan isi data calon peserta didik baru dengan benar</p>
+            </div>
+
+            <form onsubmit="handlePpdbSubmit(event)" class="space-y-4 text-sm">
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Nama Lengkap Siswa</label>
+                    <input type="text" required placeholder="Sesuai ijazah SMP/MTs" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">NISN</label>
+                        <input type="number" required placeholder="10 Digit NISN" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Asal Sekolah</label>
+                        <input type="text" required placeholder="Nama SMP/MTs Asal" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Pilihan Peminatan</label>
+                        <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                            <option>MIPA (Sains & Teknologi)</option>
+                            <option>IPS (Sosial & Ekonomi)</option>
+                            <option>Bahasa & Sastra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Jalur Pendaftaran</label>
+                        <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                            <option>Jalur Prestasi Akademik/Non-Akademik</option>
+                            <option>Jalur Zonasi Wilayah</option>
+                            <option>Jalur Afirmasi / KETM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Nomor WhatsApp Aktif</label>
+                    <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                </div>
+
+                <div class="pt-4">
+                    <button type="submit" class="w-full bg-brand-gold hover:bg-amber-500 text-slate-900 font-extrabold py-3 rounded-xl shadow-md transition">
+                        Kirim Pendaftaran
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="max-w-4xl w-full bg-transparent text-center relative" onclick="event.stopPropagation()">
+            <iframe id="lightboxFrame" class="hidden w-full h-[70vh] rounded-xl bg-black" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <img id="lightboxImg" src="" alt="Gallery Preview" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl object-contain">
+            <h4 id="lightboxCaption" class="text-white font-heading font-bold text-xl mt-4"></h4>
+            <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white text-3xl hover:text-brand-gold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking menu links
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // PPDB Modal Logic
+        function openPpdbModal() {
+            document.getElementById('ppdbModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePpdbModal() {
+            document.getElementById('ppdbModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function handlePpdbSubmit(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pendaftaran PPDB Anda berhasil terkirim. Panitia akan menghubungi Anda melalui WhatsApp.');
+            closePpdbModal();
+        }
+
+        // Announcement Modal
+        function openAnnouncementModal(title) {
+            alert('Pengumuman: ' + title + '\n\nSilakan cek lampiran atau hubungi sekretariat sekolah untuk informasi lebih lengkap.');
+        }
+
+        // Lightbox Modal Logic
+        function openLightbox(caption, src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').innerText = caption;
+            document.getElementById('lightboxModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-blue', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('bg-brand-blue', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script>
+    // ===== DATA DINAMIS DARI SUPABASE (kelola lewat app.html > Website) =====
+    const SB=supabase.createClient('https://utfkkttcitjtqcyegfim.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV0ZmtrdHRjaXRqdHFjeWVnZmltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyNDM4MzksImV4cCI6MjEwODgxOTgzOX0.FIaIHHWCRjNLfxQqUKdJoJdnFRgQa4GOSBxIg1Y055Y');
+    const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const dId=u=>((u||'').match(/(?:\/d\/|[?&]id=)([\w-]{15,})/)||[])[1];
+    const tgl=d=>d?new Date(d+'T00:00:00').toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'}):'';
+    const IMG='referrerpolicy="no-referrer" loading="lazy"';
+    const BADGE={Penting:'bg-red-100 text-red-600',Akademik:'bg-blue-100 text-brand-blue',PPDB:'bg-emerald-100 text-brand-emerald',Umum:'bg-slate-200 text-slate-600'};
+    let NEWS=[],ANN=[];
+    function info(t,b,u){let m=document.getElementById('infoModal');if(!m){m=document.createElement('div');m.id='infoModal';m.className='fixed inset-0 z-50 hidden bg-slate-900/70 flex items-center justify-center p-4';m.onclick=()=>m.classList.add('hidden');document.body.appendChild(m)}
+      m.innerHTML=`<div class="bg-white rounded-2xl max-w-2xl w-full p-6 max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation()"><h3 class="font-heading font-bold text-xl mb-3">${esc(t)}</h3><p class="text-slate-600 text-sm whitespace-pre-wrap">${esc(b)}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" class="inline-block mt-4 text-brand-blue font-semibold text-sm"><i class="fa-solid fa-download"></i> Buka lampiran</a>`:''}</div>`;m.classList.remove('hidden')}
+    const openNews=i=>info(NEWS[i].judul,NEWS[i].isi);
+    const openAnn=i=>info(ANN[i].judul,ANN[i].isi,ANN[i].berkas_url);
+    function openLightbox(cap,src,video){const f=document.getElementById('lightboxFrame'),i=document.getElementById('lightboxImg');
+      f.classList.toggle('hidden',!video);i.classList.toggle('hidden',!!video);f.src=video?src:'';i.src=video?'':src;
+      document.getElementById('lightboxCaption').innerText=cap;document.getElementById('lightboxModal').classList.remove('hidden');document.body.style.overflow='hidden'}
+    function closeLightbox(){document.getElementById('lightboxFrame').src='';document.getElementById('lightboxModal').classList.add('hidden');document.body.style.overflow='auto'}
+    async function handlePpdbSubmit(e){e.preventDefault();const f=e.target.elements;
+      const{error}=await SB.from('web_ppdb').insert({nama:f[0].value,nisn:f[1].value,asal_sekolah:f[2].value,peminatan:f[3].value,jalur:f[4].value,hp:f[5].value});
+      if(error)return alert('Pendaftaran gagal terkirim: '+error.message);
+      alert('Terima kasih! Pendaftaran PPDB Anda berhasil terkirim. Panitia akan menghubungi Anda melalui WhatsApp.');e.target.reset();closePpdbModal()}
+    (async()=>{try{
+      const T=(t,o,asc,l)=>{let q=SB.from(t).select('*');if(o)q=q.order(o,{ascending:asc});return l?q.limit(l):q};
+      const[c,pr,br,pg,gl]=await Promise.all([T('web_config'),T('web_program','urutan',true),T('web_berita','tanggal',false,6),T('web_pengumuman','tanggal',false,6),T('web_galeri','created_at',false,60)]);
+      if(c.error)throw c.error;
+      const C=Object.fromEntries(c.data.map(r=>[r.k,r.v]));
+      document.querySelectorAll('[data-k]').forEach(e=>{if(C[e.dataset.k])e.textContent=C[e.dataset.k]});
+      document.querySelectorAll('[data-img]').forEach(e=>{if(C[e.dataset.img]){e.referrerPolicy='no-referrer';e.src=C[e.dataset.img]}});
+      if(C.misi)document.querySelector('[data-list=misi]').innerHTML=C.misi.split('\n').filter(x=>x.trim()).map(x=>`<li>${esc(x)}</li>`).join('');
+      if(C.maps_embed)document.querySelector('[data-maps]').src=C.maps_embed;
+      if(C.tahun_ajaran)document.title=document.title.replace(/\s*\|.*$/,'')+' | TA '+C.tahun_ajaran;
+      const col=['bg-blue-600','bg-brand-emerald','bg-amber-500'];
+      if(pr.data&&pr.data.length)document.getElementById('programGrid').innerHTML=pr.data.map((p,i)=>`<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1"><div class="w-16 h-16 rounded-2xl ${col[i%3]} text-white flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid ${esc(p.ikon||'fa-star')}"></i></div><h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">${esc(p.judul)}</h3><p class="text-slate-600 text-sm mb-6 leading-relaxed">${esc(p.deskripsi)}</p><div class="space-y-2 text-xs font-semibold text-slate-700">${(p.poin||'').split('\n').filter(x=>x.trim()).map(x=>`<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> ${esc(x)}</div>`).join('')}</div></div>`).join('');
+      if(br.data&&br.data.length){NEWS=br.data;document.getElementById('newsGrid').innerHTML=NEWS.map((n,i)=>`<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200/80 flex flex-col">${n.gambar?`<img src="${esc(n.gambar)}" ${IMG} alt="" class="h-48 w-full object-cover">`:'<div class="h-48 bg-gradient-to-br from-brand-blue to-brand-emerald"></div>'}<div class="p-6 flex-1 flex flex-col"><div class="flex items-center gap-3 text-xs text-slate-500 mb-3"><span><i class="fa-regular fa-calendar mr-1"></i> ${tgl(n.tanggal)}</span><span>&bull;</span><span class="text-brand-blue font-semibold">${esc(n.kategori)}</span></div><h3 class="font-heading font-bold text-lg text-slate-900 mb-2">${esc(n.judul)}</h3><p class="text-slate-600 text-sm line-clamp-2 mb-4 flex-1">${esc(n.isi)}</p><button onclick="openNews(${i})" class="text-brand-blue font-semibold text-sm hover:underline text-left">Baca Selengkapnya &rarr;</button></div></div>`).join('')}
+      if(pg.data&&pg.data.length){ANN=pg.data;document.getElementById('annList').innerHTML=ANN.map((a,i)=>`<div class="p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100"><span class="${BADGE[a.kategori]||BADGE.Umum} text-[10px] font-bold px-2 py-0.5 rounded uppercase">${esc(a.kategori||'Umum')}</span><span class="text-xs text-slate-400 ml-2">${tgl(a.tanggal)}</span><h4 class="font-semibold text-sm text-slate-800 mt-1 cursor-pointer hover:text-brand-blue" onclick="openAnn(${i})">${esc(a.judul)}</h4>${a.berkas_url?`<a href="${esc(a.berkas_url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-brand-blue font-medium mt-2 hover:underline"><i class="fa-solid fa-file-arrow-down"></i> ${esc(a.berkas_nama||'Unduh Lampiran')}</a>`:''}</div>`).join('')}
+      if(gl.data&&gl.data.length)document.getElementById('galleryGrid').innerHTML=gl.data.map(g=>{const v=g.tipe==='video'&&g.video_url,vid=dId(g.video_url),th=g.gambar||(vid?`https://drive.google.com/thumbnail?id=${vid}&sz=w800`:''),
+        act=v?`openLightbox(${JSON.stringify(g.judul).replace(/"/g,'&quot;')},'${esc(g.video_url)}',true)`:`openLightbox(${JSON.stringify(g.judul).replace(/"/g,'&quot;')},'${esc(g.gambar)}')`;
+        return `<div class="gallery-item ${esc((g.kategori||'').toLowerCase())} group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer bg-slate-800" onclick="${act}">${th?`<img src="${esc(th)}" ${IMG} alt="${esc(g.judul)}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">`:''}${v?'<div class="absolute inset-0 flex items-center justify-center"><span class="w-14 h-14 rounded-full bg-black/60 text-white flex items-center justify-center text-xl"><i class="fa-solid fa-play"></i></span></div>':''}<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white"><span class="text-xs text-brand-gold uppercase font-bold">${esc(g.kategori)}${v?' &bull; Video':''}</span><h4 class="font-heading font-bold text-lg">${esc(g.judul)}</h4></div></div>`}).join('');
+    }catch(err){console.warn('Supabase belum siap, memakai konten bawaan:',err.message)}})();
+    </script>
+</body>
+</html>
